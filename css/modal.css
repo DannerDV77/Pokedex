@@ -1,0 +1,346 @@
+#background {
+    background-image: url(../img/pokedex-background.png);
+    image-resolution: 30dpi;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    width: 200vh;
+    height: 10vh;
+    justify-content: center;
+
+}
+
+#searching {
+    background-image: url(../img/pokedex-top.png);
+    position: fixed;
+    background-size: cover;
+    margin: 0;
+    width: 200vh;
+    height: 21.2vh;
+}
+
+#container {
+    margin-top: 15rem;
+    margin-left: 1rem;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: space-evenly;
+    background-color: rgb(0, 0, 0, .32);
+    margin: 1em, black, solid;
+    flex-direction:initial;
+    word-wrap: break-word;
+
+}
+
+#paginador {
+    display: none;
+}
+
+#search {
+
+    font-size: xx-large;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    height: 6.5rem;
+    width: 96.8rem;
+}
+
+.pokeCardHome {
+}
+
+#searchButton {
+
+    width: 9rem;
+    height: 9rem;
+    border-radius: 10rem;
+}
+
+input::placeholder {
+    font-size: xx-large;
+    color: white;
+    opacity: 1;
+}
+
+div ::-webkit-scrollbar {
+    width: 12px;
+    /* Ancho de toda la barra de desplazamiento */
+}
+
+div ::-webkit-scrollbar-track {
+    background-color: transparent;
+    /* Color del área de seguimiento */
+}
+
+div ::-webkit-scrollbar-thumb {
+    background-color: yellow;
+    /* Color del botón de desplazamiento */
+    border-radius: 20px;
+    /* Redondez del botón de desplazamiento */
+    border: 3px solid rgb(0, 0, 0);
+}
+
+.closeModal {
+    padding: 1em 3em 1em 3em;
+    position: fixed;
+    bottom: 5em;
+    border: .2em, black solid;
+    border-radius: 1em;
+    background-color: red;
+    color: white;
+}
+
+.contenedor {
+    /*  Elemento padre  */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2em;
+    border: .5em, black solid;
+    border-radius: 1em;
+}
+
+#modal {
+    border-radius: 1em;
+}
+
+#modal::backdrop {
+    background-color: rgba(0, 0, 0, .80);
+}
+
+.bloqueCentral {
+    display: inline-flex;
+    align-items: center;
+}
+
+.bloqueCentral button {
+    height: 55vh;
+    width: 3vw;
+    color: rgb(0, 0, 0);
+    border: 5px solid black;
+}
+
+#nextPoke {
+    margin-right: 1em;
+    margin-left: .5em;
+}
+
+#previousPoke {
+    margin-right: .5em;
+    margin-left: 1em;
+}
+
+
+
+
+.infoPokemon {
+    /*  Elemento padre  */
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 80vh;
+    width: 15vw;
+    border-radius: 1em;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    word-wrap: break-word;
+    /* Ajustar el texto al ancho del div */
+    overflow-y: scroll;
+    background-color: rgb(249, 249, 252);
+    border: 5px solid black;
+    height: 22vh;
+    width: 10vw;
+}
+
+.abilities {
+    background-color: rgb(249, 249, 252);
+    word-wrap: break-word;
+    /* Ajustar el texto al ancho del div */
+    overflow-y: scroll;
+    border: 5px solid black;
+    height: 20vh;
+    width: 10vw;
+}
+
+.moves {
+    background-color: rgb(249, 249, 252);
+    word-wrap: break-word;
+    /* Ajustar el texto al ancho del div */
+    overflow-y: scroll;
+    border: 5px solid black;
+    height: 20vh;
+    width: 10vw;
+}
+
+.infoPokemon p {
+    padding-left: 1em;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    background: black;
+    background-clip: text;
+    color: transparent;
+}
+
+.pokeCard {
+    /*  Elemento padre  */
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 63vh;
+    width: 25vw;
+    border-radius: 2em;
+}
+
+#namePoke {
+    font-size: 30;
+    color: rgb(0, 0, 0);
+}
+
+.viewPoke {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.viewPoke img {
+    height: 40vh;
+    width: 20vw;
+    background-image: url(../img/fondo3.jpeg);
+    background-size: cover;
+    border: 0.1em, black solid;
+}
+
+.tipos {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tipos p {
+    padding: 1em;
+}
+
+.galeriaPokemon {
+    /*  Elemento padre  */
+    border: 10px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 80vh;
+    width: 15vw;
+    flex-wrap: wrap;
+    border-radius: 1em;
+}
+
+.onepoke {
+    background-image: url(../img/fondo3.jpeg);
+    background-size: cover;
+    flex-wrap: wrap;
+    border: 5px solid black;
+    height: 20vh;
+    width: 10vw;
+}
+
+.twopoke {
+    background-image: url(../img/fondo3.jpeg);
+    background-size: cover;
+    border: 5px solid black;
+    height: 20vh;
+    width: 10vw;
+}
+
+.treepoke {
+    background-image: url(../img/fondo3.jpeg);
+    background-size: cover;
+    border: 5px solid black;
+    height: 20vh;
+    width: 10vw;
+}
+
+.galeriaPokemon img {
+    height: 20vh;
+    width: 10vw;
+    flex-wrap: wrap;
+}
+
+.isnormal {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(254, 255, 255) 17.8%, rgb(99, 99, 99) 100.2%);
+}
+
+.isbug {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(130, 228, 73) 17.8%, rgb(146, 13, 199) 100.2%);
+}
+
+.isfire {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(219, 123, 13) 17.8%, rgb(235, 3, 3) 100.2%);
+}
+
+.iswater {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 255, 255) 17.8%, rgb(25, 230, 212) 100.2%);
+}
+
+.iselectric {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(252, 247, 0) 17.8%, rgb(0, 0, 0) 100.2%);
+}
+
+.isgrass {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(147, 231, 121) 17.8%, rgba(2, 245, 255, 1) 100.2%);
+}
+
+.isice {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(65, 243, 228) 17.8%, rgb(49, 1, 223) 100.2%);
+}
+
+.isfighting {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(245, 0, 0) 17.8%, rgb(150, 150, 150) 100.2%);
+}
+
+.ispoison {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(71, 0, 88) 17.8%, rgb(10, 102, 1) 100.2%);
+}
+
+.isground {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(211, 160, 19) 17.8%, rgb(214, 214, 214) 100.2%);
+}
+
+.isflying {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(48, 241, 255) 17.8%, rgb(252, 252, 252) 100.2%);
+}
+
+.ispsychic {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(206, 1, 247) 17.8%, rgb(14, 0, 138) 100.2%);
+}
+
+.isrock {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(66, 66, 66) 17.8%, rgb(0, 0, 0) 100.2%);
+}
+
+.isghost {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(47, 0, 68) 17.8%, rgb(255, 255, 255) 100.2%);
+}
+
+.isdragon {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(180, 163, 6) 17.8%, rgb(116, 115, 115) 100.2%);
+}
+
+.isdark {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 0, 0) 17.8%, rgb(66, 66, 66) 100.2%);
+}
+
+.issteel {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(131, 131, 131) 17.8%, rgb(66, 66, 66) 100.2%);
+}
+
+.isfairy {
+    background: radial-gradient(circle farthest-corner at 10% 20%, rgb(255, 2, 200) 17.8%, rgb(239, 132, 243) 100.2%);
+}
